@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <title>Faiz Jihad Al Baihaqi · Fullstack & AI</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description"
-    content="Personal portfolio of Faiz Jihad – Informatics Engineering student, fullstack developer, AI enthusiast">
+  <meta name="description" content="Personal portfolio of Faiz Jihad – Informatics Engineering student, fullstack developer, AI enthusiast">
   <meta name="keywords" content="Faiz, Laravel, React, Flutter, AI, portfolio, fullstack">
   <meta name="author" content="Faiz Jihad Al Baihaqi">
   <link rel="stylesheet" href="assets/css/main.css">
@@ -774,12 +772,48 @@
       width: 100%;
     }
 
-    /* ===== RESPONSIVE FIXES ===== */
+    /* ===== RESPONSIVE MOBILE FIXES (ONLY ADDED, STRUCTURE UNCHANGED) ===== */
     @media (max-width: 768px) {
       :root {
         --card-width: 280px;
         --card-gap: 15px;
-        --container-padding: 15px;
+        --container-padding: 16px;
+      }
+
+      /* headings */
+      .experience-title h2,
+      .organization-header h2,
+      .projects-title h2 {
+        font-size: 2rem;
+      }
+
+      .intro--banner h1 {
+        font-size: 3rem;
+        line-height: 1.1;
+      }
+
+      .intro--banner img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .intro--options {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .intro--options a {
+        width: 100%;
+        margin: 0;
+      }
+
+      .about--banner h2 {
+        font-size: 2.5rem;
+      }
+
+      .about--banner p {
+        font-size: 1rem;
       }
 
       .project-image {
@@ -791,29 +825,174 @@
         width: 50px;
       }
 
+      /* stack grids */
       .experience-grid,
-      .organization-grid {
+      .organization-grid,
+      .org-stats,
+      .timeline-grid {
         grid-template-columns: 1fr;
       }
 
       .org-stats {
-        grid-template-columns: 1fr;
         gap: 15px;
+        padding: 20px;
+      }
+
+      .stat-number {
+        font-size: 2rem;
+      }
+
+      /* organization cards */
+      .org-card {
+        padding: 20px;
+      }
+
+      .org-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .org-badge {
+        align-self: flex-start;
+      }
+
+      /* timeline */
+      .timeline-item {
+        padding: 15px;
+      }
+
+      /* hire section form */
+      .work-request--options {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .options-a,
+      .options-b {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .options-a label,
+      .options-b label {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+      }
+
+      .work-request--information {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .information-name,
+      .information-email {
+        width: 100%;
+      }
+
+      /* modal contact */
+      .modal {
+        padding: 20px;
+      }
+
+      .modal--options {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .modal--options li {
+        margin: 0;
+      }
+
+      /* header */
+      .header--logo img {
+        width: 60px !important;
+        height: 45px !important;
+      }
+
+      .header--cta {
+        padding: 8px 16px;
+        font-size: 0.9rem;
       }
     }
 
     @media (max-width: 480px) {
       :root {
         --card-width: 260px;
+        --container-padding: 14px;
       }
 
       .organization-header h2 {
+        font-size: 1.8rem;
+      }
+
+      .intro--banner h1 {
+        font-size: 2.5rem;
+      }
+
+      .about--banner h2 {
         font-size: 2rem;
+      }
+
+      .project-item h3 {
+        font-size: 1.2rem;
+      }
+
+      .project-tech span {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+      }
+
+      .project-link-btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+      }
+
+      .org-stats {
+        padding: 15px;
+      }
+
+      .stat-number {
+        font-size: 1.8rem;
+      }
+
+      .stat-label {
+        font-size: 0.8rem;
+      }
+
+      .carousel-container:before,
+      .carousel-container:after {
+        width: 30px;
+      }
+    }
+
+    /* small devices 360px and below */
+    @media (max-width: 360px) {
+      :root {
+        --card-width: 240px;
+      }
+
+      .intro--banner h1 {
+        font-size: 2.2rem;
+      }
+
+      .experience-card-header {
+        flex-wrap: wrap;
+      }
+
+      .experience-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+      }
+
+      .experience-card h3 {
+        font-size: 1.1rem;
       }
     }
   </style>
 </head>
-
 <body>
   <!-- small viewport notification (unchanged) -->
   <div class="device-notification">
@@ -1384,5 +1563,4 @@
       })();
   </script>
 </body>
-
 </html>
