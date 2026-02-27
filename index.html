@@ -72,12 +72,7 @@
     }
 
     /* ===== TYPOGRAPHY ===== */
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h1, h2, h3, h4, h5, h6 {
       line-height: 1.2;
       letter-spacing: -0.02em;
     }
@@ -748,7 +743,7 @@
       border-color: var(--gold);
     }
 
-    .work-request--options input[type="checkbox"]:checked+label {
+    .work-request--options input[type="checkbox"]:checked + label {
       background: rgba(255, 215, 0, 0.2);
       border-color: var(--gold);
       color: var(--gold);
@@ -797,10 +792,10 @@
       font-size: clamp(0.9rem, 2.5vw, 1rem);
     }
 
-    .information-name input:focus+label,
-    .information-email input:focus+label,
-    .information-name input:not(:placeholder-shown)+label,
-    .information-email input:not(:placeholder-shown)+label {
+    .information-name input:focus + label,
+    .information-email input:focus + label,
+    .information-name input:not(:placeholder-shown) + label,
+    .information-email input:not(:placeholder-shown) + label {
       top: 0;
       transform: translateY(-100%);
       font-size: 0.8rem;
@@ -895,8 +890,7 @@
     /* Tablet Portrait */
     @media (max-width: 768px) {
       .l-side-nav {
-        display: none;
-        /* Hide side nav on mobile */
+        display: none; /* Hide side nav on mobile */
       }
 
       .outer-nav {
@@ -988,7 +982,6 @@
 
     /* Touch-friendly improvements */
     @media (hover: none) and (pointer: coarse) {
-
       .experience-card:hover,
       .org-card:hover,
       .project-item:hover {
@@ -1004,14 +997,12 @@
       .modal--options a,
       .work-request--options label,
       .hire input[type="submit"] {
-        padding: 12px 20px;
-        /* Larger touch targets */
+        padding: 12px 20px; /* Larger touch targets */
       }
     }
 
     /* Print styles */
     @media print {
-
       .header,
       .l-side-nav,
       .outer-nav,
@@ -1392,8 +1383,7 @@
                         </div>
                       </div>
                     </a>
-                    <a href="https://github.com/faiz-jihad/Web-Kalkulasi-IPK-CUMLAUDE" target="_blank"
-                      class="project-link">
+                    <a href="https://github.com/faiz-jihad/Web-Kalkulasi-IPK-CUMLAUDE" target="_blank" class="project-link">
                       <div class="project-item">
                         <div class="project-image"><img src="assets/img/image.png" alt="Kalkulator IPK Cumlaude"></div>
                         <div class="project-content">
@@ -1501,8 +1491,7 @@
                       <label for="opt-1">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 150 111">
                           <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                            <path
-                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                            <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                           </g>
                         </svg>
                         App Design
@@ -1511,8 +1500,7 @@
                       <label for="opt-2">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 150 111">
                           <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                            <path
-                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                            <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                           </g>
                         </svg>
                         Graphic Design
@@ -1521,8 +1509,7 @@
                       <label for="opt-3">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 150 111">
                           <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                            <path
-                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                            <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                           </g>
                         </svg>
                         Video Editor
@@ -1533,8 +1520,7 @@
                       <label for="opt-4">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 150 111">
                           <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                            <path
-                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                            <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                           </g>
                         </svg>
                         UX Design
@@ -1543,8 +1529,7 @@
                       <label for="opt-5">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 150 111">
                           <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                            <path
-                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                            <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                           </g>
                         </svg>
                         Webdesign
@@ -1553,8 +1538,7 @@
                       <label for="opt-6">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 150 111">
                           <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                            <path
-                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                            <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
                           </g>
                         </svg>
                         Marketing
@@ -1611,18 +1595,18 @@
           if (old) old.remove();
           document.head.appendChild(styleSheet);
         }
-
-        window.addEventListener('load', function () {
+        
+        window.addEventListener('load', function () { 
           setTimeout(fixCarouselWidth, 100);
           // Also fix on orientation change
-          window.addEventListener('orientationchange', function () {
+          window.addEventListener('orientationchange', function() {
             setTimeout(fixCarouselWidth, 200);
           });
         });
-
-        window.addEventListener('resize', function () {
-          clearTimeout(window.resized);
-          window.resized = setTimeout(fixCarouselWidth, 150);
+        
+        window.addEventListener('resize', function () { 
+          clearTimeout(window.resized); 
+          window.resized = setTimeout(fixCarouselWidth, 150); 
         });
       })();
   </script>
